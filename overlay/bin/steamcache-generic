@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+/usr/sbin/nginx -t
+exec /usr/sbin/nginx -g "daemon off;"
