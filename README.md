@@ -23,13 +23,15 @@ You will need to have a DNS server forwarding queries to the machine your docker
 Run the origin container using the following to allow TCP port 80 (HTTP) through the host machine. Replace `/tmp/data` with a directory to store downloaded data, such as a dedicated hard-drive.
 
 ```
-docker run --name steamcache-generic -p 80:80 -v /tmp/data:/data steamcache/generic:latest
+docker run -it --name steamcache-generic -p 80:80 -v /tmp/data:/data steamcache/generic:latest
 ```
 
 #### Additional options
 
 * `-d` will run the docker container in the background. Access the logs with `docker logs steamcache-generic`.
+* `--network host` will use the host networking stack for improved performance.
 * `--log-opt max-size=10m --log-opt max-file=3` will automatically rotate container logs.
+* `-it` will attach an interactive tty for debugging but is not needed in production and can be removed.
 
 ## Quick Explanation
 
