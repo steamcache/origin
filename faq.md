@@ -56,7 +56,7 @@ This solution is designed to support anything from a couple of people at home, t
 
 No. HTTPS traffic is encrypted. Some of the games, Origin for instance, also serve HTTPS content on the same hostnames we're intercepting - for this you can use SNI Proxy. It listens on port 443 and just passes through any HTTPS traffic. It is unable to inspect the traffic, or cache it.
 
-You can find more at the [steamcache/sni-proxy](https://github.com/steamcache/sni-proxy) project page.
+You can find more at the [steamcache/sniproxy](https://github.com/steamcache/sniproxy) project page.
 
 ## Can I cache Fortnite/Epic Games Launcher?
 
