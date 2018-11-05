@@ -78,6 +78,18 @@ You can find a list of domains you will want to use for each service over on [uk
 
 Regular commodity hardware (a single 2TB WD Black on an HP Microserver) can achieve peak throughputs of 30MB/s+ using this setup (depending on the specific content being served).
 
+## Changing Upstream DNS
+
+One environment variables are available to manage the upstream dns servers, and are set to the following defaults.
+```
+ UPSTREAM_DNS 8.8.8.8 8.8.4.4
+```
+
+You can override these Settings by adding the follwing command. Multiple upstream dns servers are allowed. Seperating by a whitespace. 
+```
+-e UPSTREAM_DNS="1.1.1.1 1.0.0.1"
+```
+
 ## Tweaking Cache sizes
 
 Two environment variables are available to manage both the memory and disk cache for a particular container, and are set to the following defaults.
