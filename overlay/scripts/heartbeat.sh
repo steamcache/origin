@@ -12,5 +12,5 @@ fi
 
 while [ 1 ]; do
     sleep $BEATTIME;
-	wget http://127.0.0.1/heatbeat -O /dev/null > /dev/null 2>&1
+	wget http://127.0.0.1/steamcache-heartbeat -S -O - > /dev/null 2>&1 /dev/null
 done
