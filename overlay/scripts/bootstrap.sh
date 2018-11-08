@@ -12,4 +12,6 @@ echo "Done. Starting caching server."
 
 /usr/sbin/nginx -t
 
-/usr/sbin/nginx -g "daemon off;" & ./heartbeat.sh ${BEAT_TIME}
+./heartbeat.sh ${BEAT_TIME} &
+
+/usr/sbin/nginx -g "daemon off;"
