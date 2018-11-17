@@ -8,6 +8,14 @@ sed -i "s/CACHE_MAX_AGE/${CACHE_MAX_AGE}/"    /etc/nginx/sites-available/generic
 echo "Checking permissions (This may take a long time if the permissions are incorrect on large caches)..."
 find /data \! -user ${WEBUSER} -exec chown ${WEBUSER}:${WEBUSER} '{}' +
 
+env
+
+if [ "$CACHE_MONOLITHIC" = "true" ]; then
+	echo "Generating up-to-date cache mappings"
+	/bin/sh /scripts/generate-maps.sh
+	sed -ri 's/proxy_cache_key(\s+)\$uri/proxy_cache_key\1$cacheidentifier\/$uri/'  /etc/nginx/sites-available/generic.conf
+fi
+
 echo "Done. Starting caching server."
 
 /usr/sbin/nginx -t
