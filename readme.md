@@ -80,12 +80,14 @@ Regular commodity hardware (a single 2TB WD Black on an HP Microserver) can achi
 
 ## Changing Upstream DNS
 
-One environment variables are available to manage the upstream dns servers, and are set to the following defaults.
+If you need to change the upstream DNS server the cache uses, these are defined by the `UPSTREAM_DNS` environment variable. The defaults are Google DNS (8.8.8.8 and 8.8.4.4).
+
 ```
  UPSTREAM_DNS 8.8.8.8 8.8.4.4
 ```
 
-You can override these Settings by adding the follwing command. Multiple upstream dns servers are allowed. Seperating by a whitespace. 
+You can override these using the `-e` argument to docker run and specifying your upstream DNS servers. Multiple upstream dns servers are allowed,  separated by whitespace.
+
 ```
 -e UPSTREAM_DNS="1.1.1.1 1.0.0.1"
 ```
