@@ -11,6 +11,7 @@ workflows:
              branches:
                only: 
                  - legacy
+                 - proxy_read_timeout
       - publish_latest:
           context: docker-hub
           requires:
