@@ -1,7 +1,7 @@
 # Generic Game Download Cache Docker Container
 
 # Important Note
-This container is designed to cache a single game cdn in a single instance. In most use cases you will want to use the [steamcache/monolithic](https://hub.docker.com/r/steamcache/monolithic) image instead. If you really know what you are doing and wish to use generic please read the usage on [github](https://github.com/steamcache/generic/blob/master/readme.md)
+This container is designed to cache a single game cdn in a single instance. In most use cases you will want to use the [steamcache/monolithic](https://hub.docker.com/r/steamcache/monolithic) image instead. If you really know what you are doing and wish to use generic please read the usage on [github](https://github.com/steamcache/generic/blob/master/USAGE.md)
 
 ## Thanks
 
