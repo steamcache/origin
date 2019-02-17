@@ -1,4 +1,4 @@
-# Sngle Game Download Cache Docker Container
+# Generic Game Download Cache Docker Container
 
 ## Important Note
 
