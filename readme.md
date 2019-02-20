@@ -13,7 +13,7 @@ This container is designed to cache a single game cdn in a single instance. In m
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Jessica Smith, Robin Lewis, Brian Wojtczak, Jason Rivers
+Copyright (c) 2016 Jessica Smith, Robin Lewis, Brian Wojtczak, Jason Rivers, James Kinsman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
