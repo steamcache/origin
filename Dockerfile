@@ -4,7 +4,7 @@ MAINTAINER LanCache.Net Team <team@lancache.net>
 ENV GENERICCACHE_VERSION=2 \    
     WEBUSER=www-data \
 	CACHE_MODE=generic \
-    CACHE_MEM_SIZE=500m \
+    CACHE_INDEX_SIZE=500m \
     CACHE_DISK_SIZE=1000000m \
     CACHE_MAX_AGE=3560d \
 	CACHE_SLICE_SIZE=1m \
